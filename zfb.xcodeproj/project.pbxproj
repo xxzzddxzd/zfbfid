@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B141B69D210188F700C6229B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B141B69C210188F700C6229B /* Foundation.framework */; };
+		B141B6A8210188F700C6229B /* zfb.mm in Sources */ = {isa = PBXBuildFile; fileRef = B141B6A7210188F700C6229B /* zfb.mm */; };
+		B141B6B3210189CE00C6229B /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B141B6B2210189CD00C6229B /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B141B699210188F700C6229B /* zfb.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = zfb.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B141B69C210188F700C6229B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B141B6A1210188F700C6229B /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		B141B6A2210188F700C6229B /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		B141B6A4210188F700C6229B /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		B141B6A5210188F700C6229B /* zfb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zfb-Prefix.pch"; sourceTree = "<group>"; };
+		B141B6A6210188F700C6229B /* zfb.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = zfb.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B141B6A7210188F700C6229B /* zfb.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = zfb.mm; sourceTree = "<group>"; };
+		B141B6AC210188F700C6229B /* zfb.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = zfb.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/zfb.plist; sourceTree = "<group>"; };
+		B141B6B2210189CD00C6229B /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		B14B75DB247CCD8400E5BF77 /* p_inc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = p_inc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B141B695210188F700C6229B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B141B69D210188F700C6229B /* Foundation.framework in Frameworks */,
+				B141B6B3210189CE00C6229B /* libsubstrate.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B141B68E210188F700C6229B = {
+			isa = PBXGroup;
+			children = (
+				B141B69E210188F700C6229B /* zfb */,
+				B141B69B210188F700C6229B /* Frameworks */,
+				B141B69A210188F700C6229B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B141B69A210188F700C6229B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B141B699210188F700C6229B /* zfb.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B141B69B210188F700C6229B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6B2210189CD00C6229B /* libsubstrate.dylib */,
+				B141B69C210188F700C6229B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B141B69E210188F700C6229B /* zfb */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6A6210188F700C6229B /* zfb.xm */,
+				B141B6A7210188F700C6229B /* zfb.mm */,
+				B14B75DB247CCD8400E5BF77 /* p_inc.h */,
+				B141B69F210188F700C6229B /* Package */,
+				B141B6A3210188F700C6229B /* Supporting Files */,
+			);
+			path = zfb;
+			sourceTree = "<group>";
+		};
+		B141B69F210188F700C6229B /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6A0210188F700C6229B /* DEBIAN */,
+				B141B6A9210188F700C6229B /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		B141B6A0210188F700C6229B /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6A1210188F700C6229B /* control.txt */,
+				B141B6A2210188F700C6229B /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B141B6A3210188F700C6229B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6A4210188F700C6229B /* PackageVersion.plist */,
+				B141B6A5210188F700C6229B /* zfb-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B141B6A9210188F700C6229B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6AA210188F700C6229B /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		B141B6AA210188F700C6229B /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6AB210188F700C6229B /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		B141B6AB210188F700C6229B /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				B141B6AC210188F700C6229B /* zfb.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B141B696210188F700C6229B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B141B698210188F700C6229B /* zfb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B141B6AF210188F700C6229B /* Build configuration list for PBXNativeTarget "zfb" */;
+			buildPhases = (
+				B141B693210188F700C6229B /* ShellScript */,
+				B141B694210188F700C6229B /* Sources */,
+				B141B695210188F700C6229B /* Frameworks */,
+				B141B696210188F700C6229B /* Headers */,
+				B141B697210188F700C6229B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zfb;
+			productName = zfb;
+			productReference = B141B699210188F700C6229B /* zfb.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B141B68F210188F700C6229B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					B141B698210188F700C6229B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B141B692210188F700C6229B /* Build configuration list for PBXProject "zfb" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B141B68E210188F700C6229B;
+			productRefGroup = B141B69A210188F700C6229B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B141B698210188F700C6229B /* zfb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B141B693210188F700C6229B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		B141B697210188F700C6229B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B141B694210188F700C6229B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B141B6A8210188F700C6229B /* zfb.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B141B6AD210188F700C6229B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		B141B6AE210188F700C6229B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		B141B6B0210188F700C6229B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZhengDa Xu (7B37679NQV)";
+				CODE_SIGN_STYLE = Manual;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zfb/zfb-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		B141B6B1210188F700C6229B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZhengDa Xu (7B37679NQV)";
+				CODE_SIGN_STYLE = Manual;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zfb/zfb-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B141B692210188F700C6229B /* Build configuration list for PBXProject "zfb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B141B6AD210188F700C6229B /* Debug */,
+				B141B6AE210188F700C6229B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B141B6AF210188F700C6229B /* Build configuration list for PBXNativeTarget "zfb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B141B6B0210188F700C6229B /* Debug */,
+				B141B6B1210188F700C6229B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B141B68F210188F700C6229B /* Project object */;
+}
